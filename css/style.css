@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+}
+main{
+    width: 1366px;
+    height: 1800px;
+    background-color: rgb(253, 160, 162, 0.74);
+    margin: 0 auto;
+}
+header{
+    width: 1366px;
+    height: 210px;
+}
+nav{
+    width: 1366px;
+    height: 90px;
+    background-color: rgb(221, 19, 103);
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+}
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+    font-family: "Plus Jakarta Sans", system-ui;
+    transition: 1s;
+}
+nav a:hover{
+    background-color: rgba(1, 207, 214, 0.816);
+    transform: scale(1.2);
+}
+:root{
+    --color_mujeres: rgb(233, 0, 4);
+    --color_discapacidad: rgba(247, 108, 34, 0.77);
+    --color_religion: rgba(205, 240, 6, 0.88);
+    --color_niños: rgba(0, 201, 0, 0.80);
+    --color_sexualidad: rgb(153, 1, 151);
+    --color_hombres: rgba(25, 0, 216, 0.79);
+    --color_migrantes: rgba(150, 150, 161, 0.85);
+}
+.container_grafico{
+    width: 700px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    animation-name: restinpace;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+}
+@keyframes restinpace{
+    from{
+        bottom: 0px;
+    }
+    to{
+        bottom: 100px;
+    }
+}
+.grafico{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--color_mujeres) 35%,
+                                    var(--color_discapacidad) 35% 46%,
+                                    var(--color_religion) 46% 54%,
+                                    var(--color_niños) 54% 66%,
+                                    var(--color_sexualidad) 66% 75%,
+                                    var(--color_hombres) 75% 80%,
+                                    var(--color_migrantes) 80%);
+    box-shadow: 1px 1px 5px 1px rgb(70, 70, 70);
+
+    animation-direction: alternate;
+}
+.leyenda_ali{
+    display: flex;
+    align-items: center;
+
+}
+[class^="color_"]{
+    width: 30px;
+    height: 30px;
+    background-color: var(--color_mujeres);
+    margin-left: 80px;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+.color_discapacidad{
+    background-color: var(--color_discapacidad);
+}
+.color_religion{
+    background-color: var(--color_religion);
+}
+.color_niños{
+    background-color: var(--color_niños);
+}
+.color_sexualidad{
+    background-color: var(--color_sexualidad);
+}
+.color_hombres{
+    background-color: var(--color_hombres);
+}
+.color_migrantes{
+    background-color: var(--color_migrantes);
+}
+.social{
+    color: #210000ab;
+    font-family: "Pathway Extreme", serif;
+    margin-left: 5px;
+    font-size: 30px;
+    line-height: 1.6;
+}
+.total{
+    color: #210000ab;
+    font-family: "Pathway Extreme", serif;
+    font-size: 30px;
+    padding: 10px;
+    margin-left: 50px;
+    border-radius: 3px;
+}
+.imagen1{
+    width: 710px;
+    margin-left: 10px;
+    height: 112px;
+    margin-top: 20px;
+}
+.texto1{
+    width: 1320px;
+    height: 112px;
+    margin-top: 80px;
+    margin-left: 20px;
+    background-color: rgb(247, 152, 152);
+    font-family: "Marcellus", serif;
+    font-size: larger;
+}
+.imagen2{
+    float: left;
+    margin-left: 50px;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.foto{
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.texto2{
+    width: 422px;
+    height: 480px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: "Montserrat", serif;
+    margin-left: 20px;
+    font-size: 29px;
+    float: left;
+}
+h2{
+    font-size: 36px;
+    font-family: "Shadows Into Light", cursive;
+    margin: 0 auto;
+}
+.info{
+    width: 403px;
+    height: 533px;
+    background-color: rgba(0, 0, 0, 0.182);
+    color: white;
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+}
+.info2{
+    width: 403px;
+    height: 533px;
+    background-color: rgba(0, 0, 0, 0.182);
+    color: white;
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+}
